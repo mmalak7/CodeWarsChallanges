@@ -12,9 +12,9 @@ Assertion messages may be unclear about what they display in some languages. If 
 function duplicateEncode(word){
   let wordArr = word.split('');
   
-  let output = wordArr.map(element => (wordArr.indexOf(element.toLowerCase()) === wordArr.lastIndexOf(element.toLowerCase()) || element.localeCompare(element, {sensitivity: 'base'}))? '(' : ')').join('');
+  let output = wordArr.map(element => (wordArr.indexOf(element.toLowerCase()) === wordArr.lastIndexOf(element.toLowerCase()))? '(' : ')').join('');
   console.log(output);
 
 }
 
-duplicateEncode('recede');
+duplicateEncode('Success');
